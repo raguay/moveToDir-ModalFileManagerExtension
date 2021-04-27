@@ -9,7 +9,7 @@ var moveToDir = {
     moveToDir.extMan.getCommands().addCommand('Move Selected to Cursor Directory', 'moveToDir.moveToCursor','Move the currently selected files to the directory pointed to by the current cursor.', moveToDir.moveToCursor);
   },
   installKeyMaps: function() {
-    moveToDir.extMan.getExtCommand('addKeyboardShort').command('normal',false,true,false,'m', moveToDir.moveToCursor);
+    moveToDir.extMan.getExtCommand('addKeyboardShort').command('normal',false,true,false,'M', moveToDir.moveToCursor);
   },
   moveToCursor: function() {
     //
